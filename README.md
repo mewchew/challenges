@@ -82,7 +82,7 @@ Deliverables:
 - The HTML for your design: A single `<div>` element, with any required child elements for your design
 - The CSS that implements your design, with the primary brand colors: `#8ed700`, `#84c800`, and `#76b7e4`
 
-Since this will be turned into a React component, submit the final UI as a single `html` file, with all the required styles in the `<head>`. You are free to use any (or none) CSS (and CSS transitions) or HTML libraries you like, but don't worry about JS transitions.
+Since this will be turned into a React component, submit the final UI as a single `html` file, with all the required styles in the `<head>`. You are free to use any CSS or HTML libraries or preprocessors you like, or staright up vanilla CSS/HTML. But don't worry about JS, or JS animations.
 
 ---
 
