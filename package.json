@@ -11,7 +11,11 @@
   "dependencies": {
     "bluebird": "^2.9.34",
     "fs": "0.0.2",
-    "ramda": "^0.17.1"
+    "ramda": "^0.17.1",
+    "bootstrap": "^3.3.2",
+    "grunt": "*",
+    "grunt-contrib-less": "*",
+    "jade": "*"
   }
 }
 

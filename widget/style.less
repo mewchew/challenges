@@ -1,0 +1,120 @@
+/* 
+*
+*
+Title: LESS FILE FOR CONVOY WIDGET
+Author: AV
+Date: 08/11/2015
+*
+*
+*/
+
+@import "../node_modules/bootstrap/less/variables.less";
+
+/* Variables - typically read in from master file */
+@col0: #8ed700;
+@col1: #84c800;
+@col2: #76b7e4;
+@col3:#BFE8DF;
+@col3_light: lighten(@col3, 5%);
+@col3_med: darken(@col3, 10%);
+@col3_dark: darken(@col3, 15%);
+@gray: #737373;
+
+@screen-xs-max: 300px;
+
+/* Fonts */
+
+h2 {
+    color: @col3_dark;
+}
+
+.centered{
+    text-align: center;
+}
+
+
+/* Links */
+
+a {
+    color: @col3_med;
+}
+
+
+/* Icon */
+
+.img-icon{
+    opacity:.5;
+}
+
+/* Widget */
+
+body{
+    background-color: @col3_light;
+    color:@gray;
+}
+
+.fa-3x {
+    color: @col3_light;
+}
+
+.widget {
+    background-color: rgba(255,255,255,.8);
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 15px;
+    margin:15px;   
+}
+
+
+.border-below{
+    border-bottom: solid @col3_light 2px;
+}
+
+.pad-below{
+    padding-bottom: 15px;
+}
+
+.table{
+    >tbody>tr{
+        border-top: solid @col3_light 2px;
+        cursor: pointer;        
+        >td{
+            vertical-align: middle;
+        }   
+    }    
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: @col3_light;
+}
+
+
+/* Media Queries */
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+
+
+}
+
+
+
+

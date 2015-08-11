@@ -1,0 +1,60 @@
+/* 
+*
+*
+Title: LESS FILE FOR CONVOY WIDGET
+Author: AV
+Date: 08/10/2015
+*
+*
+*/
+/* Variables - typically read in from master file */
+/* Fonts */
+h2 {
+  color: #87d4c3;
+}
+.centered {
+  text-align: center;
+}
+/* Links */
+a {
+  color: #99dbcc;
+}
+/* Icon */
+.img-icon {
+  opacity: .5;
+}
+/* Widget */
+body {
+  background-color: #d2efe8;
+  color: #737373;
+}
+.fa-3x {
+  color: #d2efe8;
+}
+.widget {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 500px;
+  border-radius: 15px;
+  margin: 15px;
+}
+.border-below {
+  border-bottom: solid #d2efe8 2px;
+}
+.pad-below {
+  padding-bottom: 15px;
+}
+.table > tbody > tr {
+  border-top: solid #d2efe8 2px;
+  cursor: pointer;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #d2efe8;
+}
+/* Media Queries */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */

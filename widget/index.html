@@ -1,0 +1,85 @@
+<!-- 
+***********************************************
+Title: MARKUP FOR CONVOY WIDGET
+Author: AV
+Date: 08/11/2015
+General notes: Div placed in fake container on
+page but could possibly be moved anywhere...
+***********************************************
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="AV">
+    <title>Convoy</title>
+    <!-- Bootstrap stylesheets-->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Custom stylesheet-->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id = "mywidget" class="container-fluid widget">
+      <div class="row">
+
+        <h2 class="centered">Services you may like</h2>            
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <h4 class="centered pad-below">People you follow on <i class="fa fa-twitter"></i>  are also using Convoy!</h4>
+            </tr>            
+            <tr>
+                <!-- Link to product  -->                 
+              <th scope="row" ><a href="#"><img src="img/icon_gband.png" class="img-icon"></a></th>
+              <td><h4><a href="#" data-toggle="popover" data-content="Dynamically populate list of twitter followers">9</a>  people you follow use</h4>
+                <!-- Link to service offered by Convoy  -->                 
+                <h3><a href="#">Garage Band Training</a></h3> 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" ><a href="#"><img src="img/icon_icloud.png" class="img-icon"></a></th>
+              <td><h4><a href="#" data-toggle="popover" data-content="Dynamically populate list of twitter followers">5</a>  people you follow use</h4>            
+                <h3><a href="#">iCloud Photo Training</a></h3> 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" ><a href="#"><img src="img/icon_nest.png" class="img-icon"></a></th>
+              <td><h4><a href="#" data-toggle="popover" data-content="Dynamically populate list of twitter followers">3</a>  people you follow use</h4>               
+                <h3><a href="#">Nest Thermostat Training</a></h3> 
+              </td>
+            </tr>
+            <tr class = "border-below">
+              <th scope="row" ><a href="#"><img src="img/icon_samsung.png" class="img-icon"></a></th>
+              <td><h4><a href="#" data-toggle="popover" data-content="Dynamically populate list of twitter followers">2</a>  people you follow use</h4>              
+                <h3><a href="#">Galaxy S5 Training</a></h3> 
+              </td>
+            </tr>             
+          </tbody>
+        </table>
+   
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <!-- ==================================================-->
+    <!-- Placed at the end of the document so the pages load faster-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">    </script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <!-- Popovers & Links (didn't have time to add links but you get the idea...)  -->  
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover(); 
+      });
+    </script>
+
+
+  </body>
+</html>
