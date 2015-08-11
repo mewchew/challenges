@@ -20,12 +20,20 @@ Date: 08/11/2015
 @col3_dark: darken(@col3, 15%);
 @gray: #737373;
 
-@screen-xs-max: 300px;
 
 /* Fonts */
 
 h2 {
     color: @col3_dark;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 16px;
 }
 
 .centered{
@@ -53,8 +61,8 @@ body{
     color:@gray;
 }
 
-.fa-3x {
-    color: @col3_light;
+.row{
+    padding-bottom: 30px;
 }
 
 .widget {
@@ -62,9 +70,9 @@ body{
     max-width: 500px;
     min-width: 300px;
     border-radius: 15px;
-    margin:15px;   
+    margin:15px;
+    border: solid 2px white;       
 }
-
 
 .border-below{
     border-bottom: solid @col3_light 2px;
@@ -77,9 +85,11 @@ body{
 .table{
     >tbody>tr{
         border-top: solid @col3_light 2px;
-        cursor: pointer;        
+        cursor: pointer;
+        vertical-align: middle;        
         >td{
             vertical-align: middle;
+            padding: 4px;
         }   
     }    
 }
@@ -91,29 +101,26 @@ body{
 
 /* Media Queries */
 
-
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { 
 
+    h2 {
+        font-size: 30px;
+        padding: 8px;
+    }
 
+    h3{
+        font-size: 24px;
+    }
 
+    h4{
+        font-size: 20px;
+    }
+    .table>tbody>tr>td{
+        padding: 8px;
+    }
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-
-
-
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
-
-
-
-}
 
 
 

@@ -3,7 +3,7 @@
 *
 Title: LESS FILE FOR CONVOY WIDGET
 Author: AV
-Date: 08/10/2015
+Date: 08/11/2015
 *
 *
 */
@@ -11,6 +11,13 @@ Date: 08/10/2015
 /* Fonts */
 h2 {
   color: #87d4c3;
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
 }
 .centered {
   text-align: center;
@@ -28,14 +35,16 @@ body {
   background-color: #d2efe8;
   color: #737373;
 }
-.fa-3x {
-  color: #d2efe8;
+.row {
+  padding-bottom: 30px;
 }
 .widget {
   background-color: rgba(255, 255, 255, 0.8);
   max-width: 500px;
+  min-width: 300px;
   border-radius: 15px;
   margin: 15px;
+  border: solid 2px white;
 }
 .border-below {
   border-bottom: solid #d2efe8 2px;
@@ -46,9 +55,11 @@ body {
 .table > tbody > tr {
   border-top: solid #d2efe8 2px;
   cursor: pointer;
+  vertical-align: middle;
 }
 .table > tbody > tr > td {
   vertical-align: middle;
+  padding: 4px;
 }
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
@@ -56,5 +67,18 @@ body {
 }
 /* Media Queries */
 /* Small devices (tablets, 768px and up) */
-/* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+    padding: 8px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .table > tbody > tr > td {
+    padding: 8px;
+  }
+}

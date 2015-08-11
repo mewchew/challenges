@@ -3,7 +3,7 @@
 Title: MARKUP FOR CONVOY WIDGET
 Author: AV
 Date: 08/11/2015
-General notes: Div placed in fake container on
+General notes: Div placed in container on
 page but could possibly be moved anywhere...
 ***********************************************
 -->
@@ -18,11 +18,86 @@ page but could possibly be moved anywhere...
     <meta name="description" content="">
     <meta name="author" content="AV">
     <title>Convoy</title>
-    <!-- Bootstrap stylesheets-->    
+    <!-- Bootstrap stylesheets - not sure what you guys do with these for react components??  -->    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Custom stylesheet-->
-    <link href="style.css" rel="stylesheet">
+    <!-- Custom styles-->
+    <style>
+      h2 {
+        color: #87d4c3;
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+      .centered {
+        text-align: center;
+      }
+      /* Links */
+      a {
+        color: #99dbcc;
+      }
+      /* Icon */
+      .img-icon {
+        opacity: .5;
+      }
+      /* Widget */
+      body {
+        background-color: #d2efe8;
+        color: #737373;
+      }
+      .row {
+        padding-bottom: 30px;
+      }
+      .widget {
+        background-color: rgba(255, 255, 255, 0.8);
+        max-width: 500px;
+        min-width: 300px;
+        border-radius: 15px;
+        margin: 15px;
+        border: solid 2px white;
+      }
+      .border-below {
+        border-bottom: solid #d2efe8 2px;
+      }
+      .pad-below {
+        padding-bottom: 15px;
+      }
+      .table > tbody > tr {
+        border-top: solid #d2efe8 2px;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+      .table > tbody > tr > td {
+        vertical-align: middle;
+        padding: 4px;
+      }
+      .table-hover tbody tr:hover td,
+      .table-hover tbody tr:hover th {
+        background-color: #d2efe8;
+      }
+      /* Media Queries */
+      /* Small devices (tablets, 768px and up) */
+      @media (min-width: 768px) {
+        h2 {
+          font-size: 30px;
+          padding: 8px;
+        }
+        h3 {
+          font-size: 24px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+        .table > tbody > tr > td {
+          padding: 8px;
+        }
+      }
+    </style>
+<!--     <link href="style.css" rel="stylesheet"> -->
   </head>
 
   <body>
